@@ -13,6 +13,7 @@
 		2A819D9229253DAD0056FF6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A819D9029253DAD0056FF6B /* Main.storyboard */; };
 		2A819D9429253DB00056FF6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A819D9329253DB00056FF6B /* Assets.xcassets */; };
 		2A819D9729253DB00056FF6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A819D9529253DB00056FF6B /* LaunchScreen.storyboard */; };
+		2A819D9F292545240056FF6B /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A819D9E292545240056FF6B /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2A819D9329253DB00056FF6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A819D9629253DB00056FF6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A819D9829253DB00056FF6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A819D9E292545240056FF6B /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				2A819D8A29253DAD0056FF6B /* AppDelegate.swift */,
 				2A819D8C29253DAD0056FF6B /* SceneDelegate.swift */,
 				2A819D8E29253DAD0056FF6B /* ViewController.swift */,
+				2A819D9E292545240056FF6B /* WeatherView.swift */,
 				2A819D9029253DAD0056FF6B /* Main.storyboard */,
 				2A819D9329253DB00056FF6B /* Assets.xcassets */,
 				2A819D9529253DB00056FF6B /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				2A819D8F29253DAD0056FF6B /* ViewController.swift in Sources */,
 				2A819D8B29253DAD0056FF6B /* AppDelegate.swift in Sources */,
 				2A819D8D29253DAD0056FF6B /* SceneDelegate.swift in Sources */,
+				2A819D9F292545240056FF6B /* WeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
