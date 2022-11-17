@@ -18,7 +18,7 @@ public class WeatherView: UIView {
         tempLabel = UILabel(frame: frame)
         tempLabel.textAlignment = .center
         tempLabel.textColor = UIColor.black
-        tempLabel.text = "-5"
+        tempLabel.text = "1000"
         
         let text  = tempLabel.text ?? "0"
         if (Int(text) ?? 0 > 25) {
