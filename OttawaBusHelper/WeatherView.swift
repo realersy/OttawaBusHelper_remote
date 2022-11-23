@@ -4,11 +4,22 @@
 //
 //  Created by Ersan Shimshek on 16.11.2022.
 //
+//45.420015, -75.689539 Coordinates of Ottawa
+// API call https://api.openweathermap.org/data/2.5/weather?q=Ottawa&appid=5bf61704b3905dfd0002f0f494760d6b&units=metric
 
 import Foundation
 import UIKit
 
 public class WeatherView: UIView {
+    
+    struct Forecast: Codable {
+        
+        struct Main: Codable {
+            let temperature: Double
+        }
+        let temp: [Main]
+        
+    }
     
     public var tempLabel:UILabel!
     
@@ -18,23 +29,6 @@ public class WeatherView: UIView {
         tempLabel = UILabel(frame: frame)
         tempLabel.textAlignment = .center
         tempLabel.textColor = UIColor.black
-        tempLabel.text = "1000"
-        
-        let text  = tempLabel.text ?? "0"
-        if (Int(text) ?? 0 > 25) {
-                tempLabel.backgroundColor = UIColor.red
-        }
-        
-        else if (Int(text) ?? 0 > 0 && Int(text) ?? 0 < 12) {
-                tempLabel.backgroundColor = UIColor.systemBlue
-        }
-        else if (Int(text) ?? 0 >= 12 && Int(text) ?? 0 <= 25) {
-                tempLabel.backgroundColor = UIColor.systemOrange
-        }
-        
-        else if (Int(text) ?? 0 <= 0) {
-                tempLabel.backgroundColor = UIColor.blue
-        }
         addSubview(tempLabel)
     }
     
